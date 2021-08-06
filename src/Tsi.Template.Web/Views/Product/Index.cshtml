@@ -40,8 +40,9 @@
                                         <td>@item.Code</td>
                                         <td>@item.Libelle</td>
                                         <td>@item.Price</td>
-                                        <td>  
-                                           @Html.ActionLink("Delete", "Delete", "Product", new { id = item.Id }, null)
+                                        <td>
+                                            @Html.ActionLink("Delete", "Delete", "Product", new { id = item.Id }, null)
+                                            @Html.ActionLink("Update", "Update", "Product", new { id = item.Id }, null)
                                         </td>
                                     </tr>
                                 }
