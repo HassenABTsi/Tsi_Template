@@ -71,7 +71,7 @@ namespace Tsi.Template.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Code")
-                        .IsUnique();
+                        .HasFilter(" Deleted = 1 ");
 
                     b.ToTable("Products");
                 });

@@ -9,9 +9,9 @@ namespace Tsi.Template.Abstraction.Catalog
     {
         public Task<Product> CreateProductAsync(Product product); 
         public Task DeleteProductAsync(int id);
-        Task<IEnumerable<Product>> GetAllAsync(); 
-        Task<Product> GetProductByIdAsync(int id);
-
-        Task UpdateProductAsync(int id, ProductViewModel model);
+        Task<IEnumerable<Product>> GetAllAsync();
+        Task<Product> GetProductbyId(int id);
+        Task<Product> GetProductbyCode(string code);
+        Task UpdateProductAsync(ProductViewModel model);
     }
 }
